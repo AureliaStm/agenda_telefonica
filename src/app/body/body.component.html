@@ -1,0 +1,12 @@
+<div id="all-contacts" class="contacts-container" [style.marginLeft]="-(this.tabsService.activeTab - 1) * 100 + '%'">
+    <div id="all-contacts-container">
+        <span class="no-contacts-message">No Contacts</span>
+        <app-contacts-all></app-contacts-all>
+    </div>
+</div>
+
+<div id="add-contact" class="contacts-container">
+    <div id="contact-add-container">
+        <app-contact-add></app-contact-add>
+    </div>
+</div>

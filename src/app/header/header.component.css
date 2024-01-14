@@ -1,0 +1,34 @@
+.header-cell {
+    flex: 1 1 33%;
+    background: white;
+    text-align: center;
+    padding: 8px;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.header-cell:hover {
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.header-cell:first-child {
+    border-top-left-radius: 10px;
+    background-image: url(../../assets/menu-burger.png);
+}
+
+.header-cell:last-child {
+    border-top-right-radius: 10px;
+    background-image: url(../../assets/user-add.png);
+}
+
+.header-cell.inactive-header-cell:first-child {
+    background-image: url(../../assets/menu-burger-2.png);
+}
+
+.header-cell.inactive-header-cell:last-child {
+    background-image: url(../../assets/user-add-2.png);
+}
+.inactive-header-cell {
+    background: transparent;
+}

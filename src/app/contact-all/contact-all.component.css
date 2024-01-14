@@ -1,0 +1,37 @@
+.contact-item {
+    padding: 22px 4px;
+    margin: 0px 12px;
+    cursor: pointer;
+    border-top: 1px solid #e8e8e8;
+
+    display: flex;
+    align-items: center;
+}
+
+.contact-item-name {
+    flex-grow: 1;
+    color: #7b7b7b;
+    padding: 0 16px;
+}
+
+.contact-item-phone {
+    flex-grow: 1;
+    color: #7b7b7b;
+    padding: 0 16px;
+}
+
+.delete-btn {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-image: url(../../assets/icon-delete.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    flex-shrink: 0;
+}
+
+.delete-btn:hover {
+    background-image: url(../../assets/icon-delete-light.png);
+}

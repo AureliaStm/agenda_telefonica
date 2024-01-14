@@ -1,0 +1,27 @@
+<form class="contact-add-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <h3 class="fs-title">Add a contact</h3>
+    <div>
+        <input id="name" class="formular"  [formControl]="name" type="text" placeholder="Contact name">
+        <div [hidden]="name.valid || name.untouched">
+            <div class="error-message" [hidden]="!name.hasError('minlength')">
+                Name can not be shorter than 5 characters.
+            </div>
+            <div class="error-message" [hidden]="!name.hasError('required')">
+                Name is required.
+            </div>
+        </div>
+    </div>
+    <div>
+        <input id="phone" class="formular" [formControl]="phone" type="text" placeholder="Mobile number" autocomplete="off">
+        <div [hidden]="phone.valid || phone.untouched">
+            <div class="error-message" [hidden]="!phone.hasError('required')">
+                The phone is required.
+            </div>
+            <div class="error-message" [hidden]="!phone.hasError('pattern')">
+                Please provide valid phone number.
+            </div>
+        </div>
+    </div>
+
+    <button class="button" type="submit" [disabled]="!contactForm.valid">Save contact</button>
+</form>
